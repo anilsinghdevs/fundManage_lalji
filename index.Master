@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="index.master.cs" Inherits="fundManage.index1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+
+        ul li{
+            display:inline;
+            text-decoration:none;
+                  
+
+        }
+
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <b><% if (Session["unm"] != null)
+                   {
+                       Response.Write("Hello ," + Session["unm"]);
+                   } %> </b>
+            <div> 
+
+                <ul>
+                   <li> <a href="start_up.aspx">Home</a></li>
+                    
+                   || <%if (Session["unm"] != null && (Session["user_type"].Equals("AUTHOUR") || Session["user_type"].Equals("ADMIN")))
+                                                                              { %> <li><a href="Amount_Add.aspx" id="imp">Add Amount </a> </li>|| <li><a href="Add_Expance.aspx" id="imp">Add Expanses </a> </li><% } %>
+                   
+                    ||<% if (Session["unm"] != null && Session["user_type"].Equals("ADMIN"))  {%> <li><a href="regis.aspx">Add User</a> </li> <% } %>
+                    ||<li><a href="passchange.aspx?email=<% Response.Write(Session["email"]); %>"> change password </a> </li>
+                    ||<li><a href="Logout.aspx">Logout</a> </li>
+                             
+                </ul>  
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
