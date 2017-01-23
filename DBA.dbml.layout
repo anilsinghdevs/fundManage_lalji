@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DBA">
+  <DataContextMoniker Name="/DBADataContext" />
+  <nestedChildShapes>
+    <classShape Id="98e74a45-74f0-4a24-a8b9-71fe32ef3240" absoluteBounds="2.25, 3.125, 2, 2.0822371419270831">
+      <DataClassMoniker Name="/DBADataContext/user" />
+      <nestedChildShapes>
+        <elementListCompartment Id="930fc5a3-4a0f-4bd3-a975-dee422e1f38e" absoluteBounds="2.265, 3.585, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="10aae25b-baa4-453c-b9dc-3b6f175e898c" absoluteBounds="1, 0.875, 2, 1.75354248046875">
+      <DataClassMoniker Name="/DBADataContext/Amount_DB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f5668012-82da-456b-a9f8-9b3a9dd96bdd" absoluteBounds="1.0150000000000001, 1.335, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d93ee660-0741-4fc0-8743-c1e269fca6ba" absoluteBounds="3.5, 1, 2, 1.75354248046875">
+      <DataClassMoniker Name="/DBADataContext/Exapance_DB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9d3d2652-bac5-491c-856f-b479fbd9fa47" absoluteBounds="3.5149999999999997, 1.46, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
